@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Homepage of Marcin Lara</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="website-files/w3.css">
+<link rel='stylesheet' href="website-files/fontRoboto.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="website-files/style.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="website-files/ML_photo.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            
+          </div>
+        </div>
+        <div class="w3-container" style="color:black;">
+            <h2 style="color:black; text-align:center">Marcin Lara</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Postdoctoral researcher at IMPAN</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><img src="website-files/mail.jpg"></p>
+          <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-teal"></i>Office 422<br> Institute of Mathematics <br> Polish Academy of Sciences (IMPAN)
+             <br>ul. Śniadeckich 8<br>00-656 Warsaw <br> Poland</p>
+          
+          
+
+          
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-padding"> <!-- -4 and w3-padding added -->
+        <a href="#About-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayAbout()">      About me </a> 
+        <a href="#Papers-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayPapers()">      Papers </a>
+      </div>
+      <div class="w3-container w3-card w3-white">
+           
+        <span id="About-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>About me</h2> </span>
+         <span id="About-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>About me</h2></span>
+        <div class="w3-container w3-large" id="About">
+          <p>I am a math postdoc at IMPAN, Warsaw, working in the group of Piotr Achinger. Previously, I was a PhD student of Hélène Esnault and Vasudevan Srinivas at FU Berlin.
+            <br />
+            <br />
+          I am interested in arithmetic geometry, especially étale and pro-étale fundamental groups, varieties in positive characteristic, abelian varieties and Galois representations.</p>
+            
+        </div>
+
+        <span id="Papers-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Papers</h2> </span>
+          <span id="Papers-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Papers</h2></span>
+        <div class="w3-container" id="Papers">          
+            <h3 class="w3-opacity">In preparation</h3>
+                               
+            <ul class="w3-ul w3-large"> 
+                <li> <span class="paper-title">
+                    Homotopy Exact Sequence for the Pro-Étale Fundamental Group: I </span>
+
+                </li>
+
+                <li> <span class="paper-title">
+                    Homotopy Exact Sequence for the Pro-Étale Fundamental Group: II </span>
+
+                </li>
+
+                <li> <span class="paper-title">
+                    On the inverse problem for deformations of finite group representations </span>
+
+                </li>
+
+             
+            </ul>
+
+            <h3 class="w3-opacity">Theses</h3>
+                               
+            <ul class="w3-ul w3-large"> 
+                <li> <span class="paper-title">
+                  <a href="https://refubium.fu-berlin.de/handle/fub188/25018">PhD Thesis</a> </span>
+
+                </li>
+
+             
+            </ul>
+
+                      
+            
+            <hr>
+          </div>
+
+          
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+  function toggleAbout() {
+    var x = document.getElementById("About");
+    var y = document.getElementById("About-header-on");
+    var z = document.getElementById("About-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+  </script>
+
+<script>
+  function togglePapers() {
+    var x = document.getElementById("Papers");
+    var y = document.getElementById("Papers-header-on");
+    var z = document.getElementById("Papers-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+  </script>
+
+<script>
+  function displayAbout() {
+    var x = document.getElementById("About");
+    var y = document.getElementById("About-header-on");
+    var z = document.getElementById("About-header-off");
+          x.style.display = "block";
+          y.style.display = "block";
+          z.style.display = "none";
+      }
+  </script>
+
+  <script>
+  function displayPapers() {
+    var x = document.getElementById("Papers");
+    var y = document.getElementById("Papers-header-on");
+    var z = document.getElementById("Papers-header-off");
+          x.style.display = "block";
+          y.style.display = "block";
+          z.style.display = "none";
+      }
+  </script>
+
+</body>
+</html>
