@@ -61,13 +61,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-padding"> <!-- -4 and w3-padding added -->
         <a href="#About-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayAbout()">      About me </a> 
         <a href="#Papers-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayPapers()">      Papers </a>
+        <a href="#Teaching-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayTeaching()">      Teaching </a>
       </div>
       <div class="w3-container w3-card w3-white">
            
         <span id="About-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>About me</h2> </span>
          <span id="About-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>About me</h2></span>
         <div class="w3-container w3-large" id="About">
-          <p>I am a math postdoc at GU Frankfurt in the group of Jakob Stix. 
+          <p>I am a math postdoc at GU Frankfurt in the group of Anette Werner and (earlier) Jakob Stix. 
             <br />
             Previously, I was a researcher at JU Krakow. Earlier, I was a postdoc at IMPAN, Warsaw, working in the group of Piotr Achinger. I did my PhD with Hélène Esnault and Vasudevan Srinivas at FU Berlin.
             <br />
@@ -131,8 +132,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             <hr>
           </div>
 
-          
+         <span id="Teaching-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Teaching</h2> </span>
+         <span id="Teaching-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Teaching</h2></span>
+        <div class="w3-container w3-large" id="Teaching">
+	  <p>
+
+	    Im SoSe 2024 betreue ich zusammen mit Prof. Dr. Anette Werner das <a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=371912" target="_blank"><b> Proseminar über quadratische Formen</b></a>. Hier ist das <a href="website-files/pdfs/ProgrammQF.pdf" target="_blank"><b>Programm</b></a>. Es sind noch Plätze frei. Bitte lassen Sie mich per E-Mail wissen, ob Sie teilnehmen möchten.
+	    </p>
+	  <p>
+	    (EN: In the summer semester 2024, together with Annette Werner, I am supervising the  <a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=371912" target="_blank"><b>Proseminar on Quadratic Forms</b></a>. Here is the <a href="website-files/pdfs/ProgrammQF.pdf" target="_blank"><b>Programme</b></a>.
+	    There are still places available. Please, let me know via email if you want to participate.)
+	    </p>
+        </div>
+         
       </div>
+
+
 
     <!-- End Right Column -->
     </div>
@@ -180,6 +195,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     }
   }
   </script>
+
+<script>
+  function toggleTeaching() {
+    var x = document.getElementById("Teaching");
+    var y = document.getElementById("Teaching-header-on");
+    var z = document.getElementById("Teaching-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+</script>
 
 <script>
   function displayAbout() {
