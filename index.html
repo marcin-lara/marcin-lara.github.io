@@ -36,12 +36,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         </div>
         <div class="w3-container" style="color:black;">
             <h2 style="color:black; text-align:center">Marcin Lara</h2>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Researcher at GU Frankfurt</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><img src="website-files/mailGU.jpg" style="height:16px;"></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Researcher at IMPAN, Warsaw</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><img src="website-files/mailIMPAN.jpg" style="height:16px;"></p>
           <!-- <p><i class="fa fa-video fa-fw w3-margin-right w3-large w3-text-teal"></i>Online office: <br> <img src="website-files/whereby3.jpg" style="height: 16px;"></p> -->
-          <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-teal"></i>Office 214<br> Institute of Mathematics <br> Goethe University Frankfurt
-            <br>Robert-Mayer-Str. 6-8
-            <br>60325 Frankfurt am Main<!-- </i>Office 2121<br> Institute of Mathematics <br> Jagiellonian University in Kraków
+          <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-teal"></i>Office 407<br> Institute of Mathematics <br> Polish Academy of Sciences
+            <br>ul. Śniadeckich 8
+            <br>00-656 Warsaw</p><!-- </i>Office 2121<br> Institute of Mathematics <br> Jagiellonian University in Kraków
              <br>Łojasiewicza 6 <br>30-348 Kraków<br> Poland
                     </p> -->
           
@@ -60,23 +60,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     
       <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-padding"> <!-- -4 and w3-padding added -->
         <a href="#About-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayAbout()">      About me </a> 
+        <a href="#Grants-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayGrants()">      Grants </a>
         <a href="#Papers-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayPapers()">      Papers </a>
-        <a href="#Teaching-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayTeaching()">      Teaching </a>
+        <!-- <a href="#Teaching-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayTeaching()">      Teaching </a> -->
       </div>
       <div class="w3-container w3-card w3-white">
            
         <span id="About-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>About me</h2> </span>
          <span id="About-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>About me</h2></span>
         <div class="w3-container w3-large" id="About">
-          <p>I am a math postdoc at GU Frankfurt in the group of Anette Werner and (earlier) Jakob Stix. 
+          <p>I am an assistant professor (adiunkt) at IMPAN, Warsaw.
+	    <br />
+	    <br />
+	    Previously, I was a postdoc at GU Frankfurt in the group of Jakob Stix and (later) Anette Werner. 
             <br />
-            Previously, I was a researcher at JU Krakow. Earlier, I was a postdoc at IMPAN, Warsaw, working in the group of Piotr Achinger. I did my PhD with Hélène Esnault and Vasudevan Srinivas at FU Berlin.
+            Earlier, I was a researcher at JU Krakow. Before that, I was a postdoc at IMPAN, working in the group of Piotr Achinger. I did my PhD with Hélène Esnault and Vasudevan Srinivas at FU Berlin.
             <br />
             <br />
           I am interested in arithmetic geometry, especially the étale and pro-étale fundamental groups, rigid geometry, condensed mathematics, varieties in positive characteristic and Galois representations.</p>
+
             
         </div>
 
+         <span id="Grants-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleGrants()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Grants</h2> </span>
+         <span id="Grants-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleGrants()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Grants</h2></span>
+        <div class="w3-container w3-large" id="Grants">
+	  <p>
+I am the PI of the NCN Sonata grant "Homotopy Theory in Arithmetic Geometry via Condensed Mathematics".
+	    </p>
+        </div>
+	
         <span id="Papers-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Papers</h2> </span>
           <span id="Papers-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Papers</h2></span>
         <div class="w3-container" id="Papers">          
@@ -132,18 +145,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             <hr>
           </div>
 
-         <span id="Teaching-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Teaching</h2> </span>
-         <span id="Teaching-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Teaching</h2></span>
-        <div class="w3-container w3-large" id="Teaching">
-	  <p>
-
-	    Im SoSe 2024 betreue ich zusammen mit Prof. Dr. Annette Werner das <a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=371912" target="_blank"><b> Proseminar über quadratische Formen</b></a>. Hier ist das <a href="website-files/pdfs/ProgrammQF.pdf" target="_blank"><b>Programm</b></a>. Es sind noch Plätze frei. Bitte lassen Sie mich per E-Mail wissen, ob Sie teilnehmen möchten.
-	    </p>
-	  <p>
-	    (EN: In the summer semester 2024, together with Annette Werner, I am supervising the  <a href="https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=371912" target="_blank"><b>Proseminar on Quadratic Forms</b></a>. Here is the <a href="website-files/pdfs/ProgrammQF.pdf" target="_blank"><b>Programme</b></a>.
-	    There are still places available. Please, let me know via email if you want to participate.)
-	    </p>
-        </div>
+        <!--  <span id="Teaching-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf150;</i>Teaching</h2> </span> -->
+        <!--  <span id="Teaching-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleTeaching()"><i class="fa w3-margin-right w3-xlarge w3-text-teal">&#xf152;</i>Teaching</h2></span> -->
+        <!-- <div class="w3-container w3-large" id="Teaching"> -->
+	<!--   <p> -->
+	<!--     </p> -->
+        <!-- </div> -->
          
       </div>
 
@@ -195,6 +202,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     }
   }
   </script>
+
+<script>
+  function toggleGrants() {
+    var x = document.getElementById("Grants");
+    var y = document.getElementById("Grants-header-on");
+    var z = document.getElementById("Grants-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+</script>
+
 
 <script>
   function toggleTeaching() {
