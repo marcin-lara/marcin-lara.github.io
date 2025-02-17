@@ -1,0 +1,5 @@
+.my_icons {
+  width: 1.2em; /* Use relative size */
+  height: 1.2em;
+  fill: currentColor;
+  vertical-align: top; /* Aligns with text middle */
