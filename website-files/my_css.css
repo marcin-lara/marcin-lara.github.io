@@ -3,3 +3,16 @@
   height: 1.2em;
   fill: currentColor;
   vertical-align: top; /* Aligns with text middle */
+}
+
+.my_headline_icons {
+  width: 1em; /* Use relative size */
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle; /* Aligns with text middle */
+}
+
+.paper-title {
+        /* font-family: Inter; */
+	font-size: 110%; 
+}
