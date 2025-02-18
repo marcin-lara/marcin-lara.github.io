@@ -51,23 +51,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "InterDisplay", sans-serif;}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-padding"> <!-- -4 and w3-padding added -->
-        <a href="#labelForAbout" class="w3-button w3-light-grey" style="text-decoration:none">      About me </a> 
-        <a href="#labelForGrants" class="w3-button w3-light-grey" style="text-decoration:none">      Grants </a>
-        <a href="#labelForPapers" class="w3-button w3-light-grey" style="text-decoration:none">      Papers </a>
+        <a href="#About-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayAbout()">      About me </a> 
+        <a href="#Grants-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayGrants()">      Grants </a>
+        <a href="#Papers-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayPapers()">      Papers </a>
         <!-- <a href="#Teaching-header-on" class="w3-button w3-light-grey" style="text-decoration:none" onclick="displayTeaching()">      Teaching </a> -->
       </div>
       <div class="w3-container w3-card w3-white">
            
-         
-<!-- Hidden checkbox to control the toggling -->
-<input type="checkbox" id="toggleAbout" class="toggleCheckbox" style="display:none;">
-
-<!-- Labels that act as buttons -->
-<label id="labelForAbout" for="toggleAbout" class="w3-text-grey w3-padding-16"><h3><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> About me </h3></label>
-
-<!-- Elements that get toggled -->
-<div id="About" class="toggleTarget">
-        <div class="w3-container w3-large" id="About-contents">
+        <span id="About-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> About me</h2> </span>
+        <span id="About-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleAbout()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> About me</h2></span>
+        <div class="w3-container w3-large" id="About">
           <p>I am an assistant professor (adiunkt) at IMPAN, Warsaw.
 	    <br />
 	    <br />
@@ -77,35 +70,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "InterDisplay", sans-serif;}
             <br />
             <br />
           I am interested in arithmetic geometry, especially the étale and pro-étale fundamental groups, rigid geometry, condensed mathematics, varieties in positive characteristic and Galois representations.</p>
-	</div>
-</div>
 
-<!-- Hidden checkbox to control the toggling -->
-<input type="checkbox" id="toggleGrants" class="toggleCheckbox" style="display:none;">
+            
+        </div>
 
-<!-- Labels that act as buttons -->
-<label id="labelForGrants" for="toggleGrants" class="w3-text-grey w3-padding-16"><h3><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Grants </h3></label>
-
-<!-- Elements that get toggled -->
-<div id="Grants" class="toggleTarget">
-        <div class="w3-container w3-large" id="Grants-contents">
+         <span id="Grants-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleGrants()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Grants</h2> </span>
+         <span id="Grants-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="toggleGrants()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Grants </h2></span>
+        <div class="w3-container w3-large" id="Grants">
 	  <p>
 I am the PI of the NCN Sonata grant "Homotopy Theory in Arithmetic Geometry via Condensed Mathematics".
-	  </p>
-	</div>
-</div>
-
-
-<!-- Hidden checkbox to control the toggling -->
-<input type="checkbox" id="togglePapers" class="toggleCheckbox" style="display:none;">
-
-<!-- Labels that act as buttons -->
-<label id="labelForPapers" for="togglePapers" class="w3-text-grey w3-padding-16"><h3><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Papers </h3></label>
-
-<!-- Elements that get toggled -->
-<div id="Papers" class="toggleTarget">
-        <div class="w3-container" id="Papers-contents">   
-            <h4 class="w3-opacity">Papers and preprints</h4>
+	    </p>
+        </div>
+	
+        <span id="Papers-header-on"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Papers </h2> </span>
+          <span id="Papers-header-off" style="display: none;"> <h3 class="w3-text-grey w3-padding-16" onclick="togglePapers()"><img src="website-files/icons/plus-square.svg" alt="Plus Square Icon" class="my_headline_icons" /> Papers</h2></span>
+        <div class="w3-container" id="Papers">          
+            <h3 class="w3-opacity">Papers and preprints</h3>
 	  <li> <span class="paper-title">
               <a href="https://arxiv.org/abs/2411.13662"><b>Logarithmic geometry beyond fs</b></a> <br> Joint work with Piotr Achinger, Katharina Hübner and Jakob Stix. <br> Submitted. </span>
           </li> 
@@ -143,8 +123,9 @@ I am the PI of the NCN Sonata grant "Homotopy Theory in Arithmetic Geometry via 
 
              
             </ul>
-<br>
-            <h4 class="w3-opacity">Theses</h4>
+
+            <h3 class="w3-opacity">Theses</h3>
+                               
             <ul class="w3-ul w3-large"> 
                 <li> <span class="paper-title">
                   <a href="https://refubium.fu-berlin.de/handle/fub188/25018" target="_blank">PhD Thesis</a> </span>
@@ -156,27 +137,8 @@ I am the PI of the NCN Sonata grant "Homotopy Theory in Arithmetic Geometry via 
 
             <hr>
           </div>
-
-</div>
-
-</div>
-	
-<!-- CSS to manage the display based on checkbox state -->
-<style>
-  /* When the checkbox is checked, show the About section and the appropriate header */
-  #toggleAbout:checked ~ #About,
-  #toggleGrants:checked ~ #Grants,
-  #togglePapers:checked ~ #Papers {
-    display: block;
-  }
-
-  /* Hide the 'About-header-off' when the checkbox is checked */
-  #toggleAbout:checked ~ #About,
-  #toggleGrants:checked ~ #Grants,
-  #togglePapers:checked ~ #Papers {
-    display: none;
-  }
-</style>
+         
+      </div>
 
 
 
@@ -189,6 +151,107 @@ I am the PI of the NCN Sonata grant "Homotopy Theory in Arithmetic Geometry via 
   <!-- End Page Container -->
 </div>
 
+<script>
+  function toggleAbout() {
+    var x = document.getElementById("About");
+    var y = document.getElementById("About-header-on");
+    var z = document.getElementById("About-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+  </script>
+
+<script>
+  function togglePapers() {
+    var x = document.getElementById("Papers");
+    var y = document.getElementById("Papers-header-on");
+    var z = document.getElementById("Papers-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+  </script>
+
+<script>
+  function toggleGrants() {
+    var x = document.getElementById("Grants");
+    var y = document.getElementById("Grants-header-on");
+    var z = document.getElementById("Grants-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+</script>
+
+
+<script>
+  function toggleTeaching() {
+    var x = document.getElementById("Teaching");
+    var y = document.getElementById("Teaching-header-on");
+    var z = document.getElementById("Teaching-header-off");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  }
+</script>
+
+<script>
+  function displayAbout() {
+    var x = document.getElementById("About");
+    var y = document.getElementById("About-header-on");
+    var z = document.getElementById("About-header-off");
+          x.style.display = "block";
+          y.style.display = "block";
+          z.style.display = "none";
+      }
+</script>
+
+<script>
+  function displayPapers() {
+    var x = document.getElementById("Papers");
+    var y = document.getElementById("Papers-header-on");
+    var z = document.getElementById("Papers-header-off");
+	  x.style.display = "block";
+	  y.style.display = "block";
+	  z.style.display = "none";
+      }
+</script>
+
+<script>
+  function displayGrants() {
+    var x = document.getElementById("Grants");
+    var y = document.getElementById("Grants-header-on");
+    var z = document.getElementById("Grants-header-off");
+	  x.style.display = "block";
+	  y.style.display = "block";
+	  z.style.display = "none";
+      }
+</script>
 
 </body>
 </html>
